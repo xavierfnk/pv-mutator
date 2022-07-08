@@ -1,0 +1,8 @@
+spec:
+  claimRef:
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: template
+    namespace: template
+    resourceVersion: template
+    uid: template

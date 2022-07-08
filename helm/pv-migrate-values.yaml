@@ -1,0 +1,19 @@
+sshd:
+  podAnnotations:
+    sidecar.istio.io/inject: "false"
+
+  tolerations:
+  - effect: NoExecute
+    operator: Exists
+  - effect: NoSchedule
+    operator: Exists
+
+rsync:
+  podAnnotations:
+    sidecar.istio.io/inject: "false"
+    
+  tolerations:
+  - effect: NoExecute
+    operator: Exists
+  - effect: NoSchedule
+    operator: Exists
